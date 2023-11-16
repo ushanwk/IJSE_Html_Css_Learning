@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Layout</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        section {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            height: 400px;
+            width: 1300px;
+            border: 3px solid black;
+            display: flex;
+
+            /*Manage content according to y-axis (cross-axis) */
+            align-items: center;
+            /*flex-start | flex-end  | center */
+
+            /*Manage content according to x-axis  (main-axis)*/
+            justify-content: space-around;
+            /*flex-start | flex-end | center*/
+            /*space-evenly (equal spaces)|
+             space-around (place spaces around left and right flex items and then the rest of space between the center element) |
+             space-between (remove the left and right flex items spaces and put all spaces between the center flex elements)*/
+        }
+
+        section > div {
+            border: 1px solid red;
+            height: 100px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<section><!--flex container -->
+    <div></div><!-- Flex-items-->
+    <div></div> <!-- Flex-items-->
+    <div></div><!-- Flex-items-->
+</section>
+
+</body>
+</html>

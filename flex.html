@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+
+        section{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            height: 400px;
+            width: 1300px;
+            border: 3px solid black;
+            display: flex;
+        }
+
+        section>div{
+            border: 1px solid red;
+            height: 100px;
+            width: 100%;
+            flex-shrink: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section>
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </section>
+    
+</body>
+
+</html>

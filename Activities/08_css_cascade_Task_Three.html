@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Cascade Task 3</title>
+    <style>
+
+        /* 1 = 1 */
+        h1 {
+            color: orangered;
+        }
+
+        /* 100+1+1+1 = 103*/
+        #mainBody main section h1{
+            color: deeppink;
+        }
+
+        /* 100+1+1+1+1+1+1+1+100 = 207 */
+        #mainBody main article section section div h1#mainHeader{
+            color: red;
+        }
+
+        /* 100+1+1 =102 */
+        #firstSection+article h1{
+            color: darkgoldenrod;
+        }
+
+        /* 100+10+1+100+10+100+100+1+100+1+1+100+1+100+1+100 = 826 */
+        #mainBody.bodyClass main#mainMain.mainMainClass>#firstSection+article#mainArticle>section#mainSection>section#subSection>div#container h1#mainHeader{
+            color: aqua;
+        }
+
+        /* 100+10+1+100+10+100+100+1+100+1+100+1+100+1+100+10+1+100+10 = 946 */
+        #mainBody.bodyClass main#mainMain.mainMainClass>#firstSection+article#mainArticle>section#mainSection>section#subSection>div#container.containerClass h1#mainHeader.mainHeader{
+            color: darkmagenta !important;
+        }
+
+        /* 100+10+1+100+10+100+1+100+1+100+1+100+1+100+10+1+100+100+10 = 946 */
+        #mainBody.bodyClass main#mainMain.mainMainClass>#firstSection+article#mainArticle>section#mainSection>section#subSection>div#container.containerClass h1#mainHeader.mainHeader{
+            color: fuchsia;
+        }
+
+    </style>
+</head>
+
+<body id="mainBody" class="bodyClass">
+<main id="mainMain" class="mainMainClass">
+    <section id="firstSection">
+
+    </section>
+    <article id="mainArticle">
+        <section id="mainSection" class="mainClass">
+            <section id="subSection" class="subClass">
+                <div id="container" class="containerClass">
+                    <h1 id="mainHeader" style="color: brown" class="mainHeader">What is Cascade.?</h1>
+                </div>
+            </section>
+        </section>
+    </article>
+</main>
+
+
+</body>
+</html>
+

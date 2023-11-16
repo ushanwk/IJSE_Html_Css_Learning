@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Cascade</title>
+    <style>
+        /*10*/
+        :first-child{
+            color: aqua;
+        }
+
+        /*1*/
+        *{
+            color: red;
+        }
+
+        /*1*/
+        h1{
+            color: green;
+        }
+
+        /*10*/
+        .mainHeader{
+            color: deeppink;
+        }
+
+        /*100*/
+        #mainHeader{
+            color: orange;
+        }
+
+        /*10*/
+        [id]{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+<!--1000-->
+<h1 id="mainHeader" style="color: brown" class="mainHeader">What is Cascade.?</h1>
+
+<!--colors-->
+<!--Brown 1000-->
+<!--Orange 100-->
+<!--Blueviolet 10-->
+<!--Deeppink 10-->
+<!--Aqua 10-->
+<!--Green 1-->
+<!--Red 1-->
+
+</body>
+</html>
